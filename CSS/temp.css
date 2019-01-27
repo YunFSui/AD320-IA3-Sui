@@ -53,11 +53,11 @@ div#main{
     text-align: center;
 }
 
-div#time{
+div#dateTime{
     text-align: center;
 }
 
-button#dateTime{
+button#time{
     float: center;
 }
 

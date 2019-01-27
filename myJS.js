@@ -3,7 +3,7 @@ window.onload = function() {
     var element2nd = document.getElementById("second");
     var element3rd = document.getElementById("third").firstChild;
     var element4th = document.getElementById("fourth");
-    var element5th = document.getElementById("fifth");
+    var element5th = document.getElementById("fifth").firstElementChild;
 
     if (element1st){
         element1st.addEventListener('click', oC);
@@ -46,26 +46,18 @@ window.onload = function() {
     }
 
     function oMOver() {
-        element5th.firstElementChild.src = "images/alt_pic.jpg";
+        element5th.src = "images/alt_pic.jpg";
     }
 
     function oMOut(){
-        element5th.firstElementChild.src = "images/index_pic.jpg";
+        element5th.src = "images/index_pic.jpg";
     }
-}
 
-
-function dT(){
-    var d = new Date();
-    alert('Today is ' + d);
-    console.log('CLick on' + d);
-}
-
-function validateForm() {
-    var name = document.forms["welcomeForm"]["name"].value;
-    var email = document.forms["welcomeForm"]["email"].value;
-    if (name == "" || email == "") {
-        alert("Required input cannot be empty");
-        return false;
+    var buttonElement = document.getElementById("dateTime").firstElementChild;
+    if (buttonElement){ buttonElement.addEventListener('click', dT);}
+    function dT(){
+        var d = new Date();
+        alert('Today is ' + d);
+        console.log('CLick on' + d);
     }
 }
