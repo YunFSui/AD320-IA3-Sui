@@ -1,0 +1,79 @@
+/* this is for the git pages */
+
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 940px;
+    margin: 20px auto 10px auto;
+    background: rgba(238, 238, 238, 0.94);
+    overflow: hidden;
+}
+
+header{
+    text-align: center;
+    background: rgba(238, 238, 238, 0.94);
+    overflow: hidden;
+    border-bottom: 2px;
+    border-bottom: 3px solid rgba(102, 6, 6, 0.94); 
+}
+
+.content{
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+main{
+    float: left;
+    width: 50%;
+    height: 750px;
+    /* margin: 16px 0px;  */
+    background-color: white;
+    /* text-align: center; */
+}
+
+aside{
+    float: right;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+}
+
+footer{
+    font-weight:bold;
+    overflow: hidden;
+    padding: 5px;
+    background-color: rgba(209, 207, 207, 0.94);
+    vertical-align: baseline;
+    border-top: 3px solid rgba(102, 6, 6, 0.94); 
+}
+
+div#main{
+    text-align: center;
+}
+
+div#time{
+    text-align: center;
+}
+
+button#dateTime{
+    float: center;
+}
+
+div#first,div#second,div#third,div#fourth{
+    border: 2px;
+    border-style: solid;
+    
+    margin: 2px;
+    height: 50px;
+    width: 50%;
+}
+
+div#first,div#third{
+    background-color: bisque;
+}
+
+div#second,div#fourth{
+    background-color: aqua;
+}
